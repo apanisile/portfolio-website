@@ -314,4 +314,9 @@ nav ul li a:hover{
     .certs {
         grid-template-columns: repeat(1, 350px);
     }
+
+    .certs h1{
+        font-size: 43px;
+    }
+
 }
