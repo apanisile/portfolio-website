@@ -320,4 +320,8 @@ nav ul li a:hover{
         font-size: 43px;
     }
 
+    .certs img{
+        width: 100px;
+    }
+
 }
