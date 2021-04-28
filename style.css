@@ -198,3 +198,23 @@ nav ul li a:hover{
 .logo_socials_soc svg:hover path{
     fill: #09128d;
 }
+
+@media only screen and (max-width: 900px) {
+    .main-header{
+        grid-template-columns: 1fr;
+        margin-left: auto;
+        margin-left: 90px;
+        grid-gap: 60px;
+        text-align: center;
+    }
+
+    .header_main_content_h1{
+        font-size: 43px;
+    }
+
+    .logo_social_soc {
+        margin-top: 60px;
+    }
+
+     
+}
