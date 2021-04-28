@@ -414,3 +414,37 @@ input[type="submit"]{
         margin: 50px auto 90px auto;
     }
 }
+
+footer {
+    background-color: #0e56f1;
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.logo-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-socials-soc{
+    margin-top: 30px;
+}
+
+.logo-socials-soc svg{
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.logo-socials-soc svg path{
+    transition: all 0.5s;
+}
+
+.logo-socials-soc svg:hover path{
+    fill: #09128d;
+}
