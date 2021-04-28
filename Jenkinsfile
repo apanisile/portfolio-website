@@ -6,7 +6,18 @@ pipeline {
                 checkout scm
             }
         }
+        stage('Deploy Image') {
+            steps{
+                script {
+                    docker.withRegistry( 'https://registry.hub.docker.com/', 'dockerHub') {
+                        dockerImage.push("$BUILD_NUMBER")
+                        dockerImage.push('latest')
+                        }
+                    }
+                }
+            }
         stage('Build'){
+            
             steps{
                 echo "Finished"
             }
