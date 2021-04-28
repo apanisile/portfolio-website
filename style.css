@@ -307,13 +307,15 @@ nav ul li a:hover{
 }
 
 .certs img:hover {
-    opacity: 06;
+    opacity: 0.6;
 }
 
 @media only screen and (max-width: 900px) {
     .certs {
-        grid-template-columns: repeat(1, 350px);
-        width: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-gap: 20px;
+        align-items: center;
     }
 
     .certs h1{
@@ -321,7 +323,10 @@ nav ul li a:hover{
     }
 
     .certs img{
-        width: 100px;
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: opacity 0.3s;
     }
 
 }
