@@ -14,7 +14,7 @@ html{
 }
 
 body{
-    background-color: black;
+    background-color: white;
     overflow: hidden;
 }
 
@@ -41,7 +41,7 @@ header {
 
 .logo h1{
     font-size: 30px;
-    color:#00FF1D;
+    color:#0011ff;
 }
 
 .navigation {
@@ -60,7 +60,7 @@ header {
 
 .navigation ul li a{
     text-decoration: none;
-    color:#00FF1D;
+    color:#0011ff;
     padding: 16px;
     display: inline-block;
     font-size: 18px;
@@ -73,8 +73,8 @@ nav ul li a:hover{
 }
 
 .sticky{
-    background-color: black;
-    border-bottom: 1px solid #00FF1D;
+    background-color: white;
+    border-bottom: 1px solid #0011ff;
 }
 
 .navigation.active{
@@ -88,7 +88,7 @@ nav ul li a:hover{
 .line{
     width: 40px;
     height: 7px;
-    background:#00FF1D;
+    background:#0011ff;
     margin-bottom: 5px;
     border-radius: 5px;
 }
@@ -105,7 +105,7 @@ nav ul li a:hover{
         left: -100%;
         width: 100%;
         height: 55%;
-        background-color: #00FF1D;
+        background-color: #0011ff;
     }
 
     .navigation ul{
@@ -121,7 +121,7 @@ nav ul li a:hover{
     .navigation ul li a{
         font-size: 29px;
         display: block;
-        color:  black;
+        color:  white;
 
     }
 
@@ -134,4 +134,67 @@ nav ul li a:hover{
         cursor: pointer;
         margin-top: 20px;
     }
+}
+
+
+
+
+.main-header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 150px;
+    margin-top: 150px;
+    grid-gap: 150px;
+}
+
+.header_main_content_h1{
+    font-size: 63px;
+    color:#09128d;
+}
+
+.header_main_content_h1 span{
+    color: #0e56f1;
+}
+
+.header-content button, form button {
+    padding: 12px 35px;
+    background-color: #0e56f1;
+    border: none;
+    color: white;
+    outline: none;
+    border-radius: 100px;
+    transition: all 0.3s;
+}
+
+.cta {
+    margin-top: 20px;
+}
+
+
+.cta:hover{
+    opacity: 0.5;
+}
+
+.logo_socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_socials_soc {
+    margin-top: 90px;
+}
+
+.logo_socials_soc svg {
+    margin-left: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.logo_socials_soc svg path{
+    transition: all 0.3s;
+}
+
+
+.logo_socials_soc svg:hover path{
+    fill: #09128d;
 }
