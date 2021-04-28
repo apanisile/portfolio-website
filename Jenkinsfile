@@ -18,10 +18,6 @@ pipeline {
                 }
             }
         }
-        stage('Publish'){
-            steps
-                
-        }
 
     }
 }
