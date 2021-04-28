@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@100;300;400;500;600;700&display-swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display-swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'be vietnam';
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 43px;
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 90px;
+    overflow-y: hidden;
+    position: fixed;
+}
+
+.logo h1{
+    font-size: 30px;
+    color:#00FF1D;
+}
+
+.navigation {
+    transition: all 0.6x ease-in-out;
+}
+
+.navigation ul {
+    display:flex
+}
+
+
+.navigation ul li{
+    list-style: none;
+    margin-right: 24px;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color:#00FF1D;
+    padding: 16px;
+    display:inline-block;
+    font-size: 18px;
+    font-weight: 900;
+    transition: all 0.3s;
+}
+
+.navigation.active{
+    
+}
