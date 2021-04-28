@@ -220,7 +220,6 @@ nav ul li a:hover{
      
 }
 
-
 .about-section{
     margin-top: 150px;
 }
@@ -330,4 +329,88 @@ nav ul li a:hover{
         transition: opacity 0.3s;
     }
 
+}
+
+
+
+.contact-heading {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #09128d;
+}
+
+.container {
+    background-color: #09128d;
+    width: 400px;
+    margin: 80px auto;
+    margin-bottom: 140px;
+    border-radius: 10px;
+    
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding: 70px 30px 70px 30px;
+}
+
+input[type="text"],
+input[type="email"] {
+    height: 40px;
+    font-size: 16px;
+    padding-left: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+label{
+    font-size: 23px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+textarea {
+    resize: none;
+    font-size: 16px;
+    padding: 6px 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+input[type="submit"]{
+    padding: 10px 50px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 40px;
+    color: #0e56f1;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+@media (max-width: 415px) {
+    .container {
+        width: 350px;
+        margin: 50px auto 90px auto;
+    }
 }
