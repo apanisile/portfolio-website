@@ -1,7 +1,7 @@
 node {
     checkout scm
 
-    withCredentials([usernamePassword( credentialsId: 'dockerHub', usernameVariable: 'apanisile', passwordVariable: 'Apanisile123*')]) {}
+    withCredentials([usernamePassword( credentialsId: 'dockerHub', usernameVariable: 'apanisile', passwordVariable: 'Apanisile123*')]) {
 
     docker.withRegistry('https://registry.hub.docker.com', 'dockerHub') {
         sh "docker login -u ${USERNAME} -p ${PASSWORD}"
@@ -9,5 +9,6 @@ node {
 
         /* Push the container to the custom Registry */
         customImage.push("latest")
+    }
     }
 }
