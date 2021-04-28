@@ -313,6 +313,7 @@ nav ul li a:hover{
 @media only screen and (max-width: 900px) {
     .certs {
         grid-template-columns: repeat(1, 350px);
+        width: auto;
     }
 
     .certs h1{
