@@ -8,7 +8,6 @@ pipeline {
         }
         stage('Build'){
             steps{
-                docker build -t portfolio-website .
                 docker.withRegistry('https://registry.hub.docker.com', 'dockerHub') {
 
                 def customImage = docker.build("apanisile/portfolio-website")
