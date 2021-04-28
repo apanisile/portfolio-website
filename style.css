@@ -45,11 +45,11 @@ header {
 }
 
 .navigation {
-    transition: all 0.6x ease-in-out;
+    transition: all 0.6s ease-in-out;
 }
 
 .navigation ul {
-    display:flex
+    display:flex;
 }
 
 
@@ -65,9 +65,18 @@ header {
     display:inline-block;
     font-size: 18px;
     font-weight: 900;
-    transition: all 0.3s;
+    transition: all 0.4s;
+}
+
+nav ul li a:hover{
+    opacity: 0.5;
+}
+
+.sticky{
+    background-color: #fff;
+    border-bottom: 1px solid #00FF1D;
 }
 
 .navigation.active{
-    
+    left: 0;
 }

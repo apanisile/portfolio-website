@@ -21,12 +21,35 @@
            <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#resume">Resume</a></li>
             <li><a href="#contact">Contact</a></li>
            </ul>
         </nav>
        </header>
- 
+       <script>
+           window.onscroll = function () {myFunction()};
+           function myFunction(){
+               if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+                   document.getElementById("home").className = "sticky";
+               }else{
+                   document.getElementById("home").className= "";
+               }
+           }
+
+           wow = new WOW({
+               boxClass: "wow", 
+               animateClass: "animated", 
+               offset: 0, 
+               mobile: true, 
+               live: true, 
+            });
+            wow.init();
+    
+    
+    
+    
+       </script>
     </body>
 </html>
