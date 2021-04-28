@@ -9,7 +9,7 @@ pipeline {
         stage('Deploy Image') {
             steps{
                 script {
-                    docker.withRegistry( 'https://registry.hub.docker.com/', 'dockerHub') {
+                    docker.withRegistry( 'https://hub.docker.com/', 'dockerHub') {
                         dockerImage.push("$BUILD_NUMBER")
                         dockerImage.push('latest')
                         }
