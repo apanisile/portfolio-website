@@ -204,9 +204,10 @@ nav ul li a:hover{
     .main-header{
         grid-template-columns: 1fr;
         margin-left: auto;
-        margin-left: 90px;
+        
         grid-gap: 60px;
         text-align: center;
+        justify-content: center;
     }
 
     .header_main_content_h1{
