@@ -18,15 +18,20 @@
                <h1>IFEOLUWA</h1>
            </div>
            <nav class="navigation">
-           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-           </ul>
-        </nav>
+               <ul>
+                   <li><a href="#home">Home</a></li>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#projects">Projects</a></li>
+                   <li><a href="#blog">Blog</a></li>
+                   <li><a href="#resume">Resume</a></li>
+                   <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
        </header>
        <script>
            window.onscroll = function () {myFunction()};
@@ -38,6 +43,11 @@
                }
            }
 
+           document.querySelector(".hamburger").addEventListener("click", (e) => {
+               e.preventDefault();
+               document.querySelector(".navigation").classList.toggle("active");
+           });
+
            wow = new WOW({
                boxClass: "wow", 
                animateClass: "animated", 
@@ -46,7 +56,7 @@
                live: true, 
             });
             wow.init();
-    
+            
     
     
     
